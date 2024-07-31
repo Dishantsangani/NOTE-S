@@ -1,0 +1,8 @@
+npx create-react-app my-app = Create App
+cd my-app = Change Drectory
+npm start = Start Server
+npm install react-router-dom = Install React Dom
+npm run build = Build A single Folder 
+npm create vite@latest my-react-app --template = Using Vite App	
+Npm run dev = start server in vite
+npm install axios = install axios API

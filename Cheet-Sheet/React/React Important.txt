@@ -1,0 +1,85 @@
+JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+
+A JavaScript function is a block of JavaScript code, that can be executed when "called" for.
+For example, a function can be called when an event occurs, like when the user clicks a button
+
+.External JavaScript Advantages
+Placing scripts in external files has some advantages:
+
+It separates HTML and code
+It makes HTML and JavaScript easier to read and maintain
+Cached JavaScript files can speed up page loads
+
+.External References
+An external script can be referenced in 3 different ways:
+
+With a full URL (a full web address)
+With a file path (like /js/)
+Without any path
+
+.JavaScript Display Possibilities
+JavaScript can "display" data in different ways:
+
+Writing into an HTML element,using innerHTML.
+Writing into the HTML output using document.write().
+Writing into an alert box, using window.alert().
+Writing into the browser console, using console.log().
+
+.JavaScript Keywords
+JavaScript statements often start with a keyword to identify the JavaScript action to be performed.
+
+var	Declares a variable
+let	Declares a block variable
+const	Declares a block constant
+if	Marks a block of statements to be executed on a condition
+switch	Marks a block of statements to be executed in different cases
+for	Marks a block of statements to be executed in a loop
+function	Declares a function
+return	Exits a function
+try	Implements error handling to a block of statements
+
+..JavaScript Values
+The JavaScript syntax defines two types of values:
+
+Fixed values
+Variable values
+
+Fixed values are called Literals.
+Variable values are called Variables.
+
+..JavaScript Variables
+In a programming language, variables are used to store data values.
+JavaScript uses the keywords var, let and const to declare variables.
+An equal sign is used to assign values to variables.
+
+..Variables are Containers for Storing Data
+..The var keyword was used in all JavaScript code from 1995 to 2015.
+..The let and const keywords were added to JavaScript in 2015.
+..The var keyword should only be used in code written for older browsers.
+
+
+...Arrow Fuction
+Arro Function allows us to write shorter Function syntex
+
+...UseMemo
+UseMemo Is Provide stop Unwanted Function Calling
+
+...Hooks
+Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed.
+...useState: Manage state in functional components
+...useEffect: Manage side effects like API calls, subscriptions, timers, etc.
+...useContext: Access the current context value
+...useReducer: An alternative to useState for complex state management
+...useCallback, useMemo: Performance optimization Hooks 
+
+
+The useCallback and useMemo Hooks are similar. 
+
+
+
+
+
+
+
+
+
