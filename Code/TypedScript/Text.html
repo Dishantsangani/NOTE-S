@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text </title>
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    } 
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  linear-gradient(45deg,#0000008a,#0000002b), url(../Image/1.jpeg) no-repeat center / cover  ;
+    }
+h1{
+    color: white;
+    font-size: 80px;
+    font-family: "Raleway";
+}
+#element{
+    background: darkblue;
+}
+</style>
+</head>
+<body>
+<h1>Dishant Sangani<span id="element"></span>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+ <script>
+var typed = new Typed('#element', {
+  strings: ['Web Developer', 'Devops Developer','UI_UX Desiger'],
+  smartBackspace:true,   
+  TypedSpeed:60,
+  backSpeed:60,
+  loop:true,
+});
+</script>
+</body>
+</html>

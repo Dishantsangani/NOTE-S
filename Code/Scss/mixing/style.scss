@@ -1,0 +1,26 @@
+@mixin dev($size, $col) {
+  font-size: $size;
+  color: $col;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-shadow: 2px 2px 2px black;
+  letter-spacing: 2px;
+  font-style: italic;
+  font-weight: bold;
+  background: burlywood;
+}
+@mixin dishant() {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+h1 {
+  @include dev(20px, red);
+}
+h2 {
+  @include dev(30px, green);
+}
+h3 {
+  @include dishant();
+}

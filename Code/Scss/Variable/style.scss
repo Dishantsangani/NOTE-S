@@ -1,0 +1,9 @@
+@import "mixin";
+@import "var";
+
+h1 {
+  background-color: $headig;
+}
+p {
+  @include p;
+}

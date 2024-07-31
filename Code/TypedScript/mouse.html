@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse events</title>
+    <link rel="stylesheet" href="./owl.carousel.min.css" />
+    <link rel="stylesheet" href="./owl.theme.green.css" />
+  </head>
+
+  <body>
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="../image/1.jpeg" height="350px" width="350px" />
+      </div>
+      <div class="item">
+        <img src="../image/10].jpeg" alt="" height="350px" width="350px" />
+      </div>
+      <div class="item">
+        <img src="../image/11.jpeg" alt="" height="350px" width="350px" />
+      </div>
+      <div class="item">
+        <img src="../image/2.jpeg" alt="" height="350px" width="350px" />
+      </div>
+      <div class="item">
+        <img src="../image/3.jpeg" alt="" height="350px" width="350px" />
+      </div>
+      <div class="item">
+        <img src="../image/4.jpeg" alt="" height="350px" width="350px" />
+      </div>
+      <div class="item">
+        <img src="../image/5.jpeg" alt="" height="350px" width="350px" />
+      </div>
+      <div class="item">
+        <img src="../image/6.jpeg" alt="" height="350px" width="350px" />
+      </div>
+      <div class="item">
+        <img src="../image/7.jpeg" alt="" height="350px" width="350px" />
+      </div>
+      <div class="item">
+        <img src="../image/8.jpeg" alt="" height="350px" width="350px" />
+      </div>
+      <div class="item">
+        <img src="../image/9.jpeg" alt="" height="350px" width="350px" />
+      </div>
+      <div class="item">
+        <img src="../image/14.jpeg" alt="" height="350px" width="350px" />
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        loop: true,
+        nav: true,
+        items: 10,
+        margin: 10,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          960: {
+            items: 5,
+          },
+          1200: {
+            items: 6,
+          },
+        },
+      });
+      owl.on("mousewheel", ".owl-stage", function (e) {
+        if (e.deltaY > 0) {
+          owl.trigger("next.owl");
+        } else {
+          owl.trigger("prev.owl");
+        }
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>
