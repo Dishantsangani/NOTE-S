@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web 2.0</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      img {
+        max-width: 100%;
+      }
+      .header {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+        background: rgb(55, 81, 126);
+      }
+      .header-sub {
+        width: 70%;
+        height: auto;
+        margin: 0px auto;
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+      }
+      .footer {
+        width: 100%;
+        color: white;
+        height: auto;
+        min-height: 200px;
+        background: rgb(55, 81, 126);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .footer h4 {
+        font-size: 20px;
+      }
+      .header-top h1 {
+        font-size: 20px;
+        color: white;
+      }
+      .header-top p {
+        font-size: 20px;
+        color: white;
+      }
+      .header-top {
+        margin-top: 150px;
+      }
+      .img {
+        animation: a;
+        animation-delay: 1s;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      @keyframes a {
+        from {
+          transform: translateX(0px);
+        }
+        to {
+          transform: translateX(50px);
+        }
+      }
+      @media only screen and (min-width: 0px) and (max-width: 600px) {
+        .header-sub {
+          width: 70%;
+          height: auto;
+          margin: 0px auto;
+          padding: 50px 0;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+        }
+        .header-top h1 {
+          font-size: 25px;
+          color: white;
+        }
+        .footer {
+          width: 100%;
+          color: white;
+          height: auto;
+          min-height: 200px;
+          background: rgb(55, 81, 126);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          /* align-items: center; */
+        }
+        .footer h4 {
+          font-size: 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-sub">
+        <div class="header-top">
+          <h1>
+            Better Solutions For Your <br />
+            Business
+          </h1>
+          <p>
+            We are team of talented designers making websites <br />
+            with Bootstrap
+          </p>
+        </div>
+        <div class="header-bottom">
+          <img
+            class="img"
+            src="../CSS/Web Template/hero-img.png"
+            width="700px"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-1">
+        <h4>Arsha</h4>
+        <p>
+          A108 Adam Street <br />
+          New York, NY 535022<br />
+          United States
+        </p>
+        <p>Phone: +1 5589 55488 55</p>
+        <p>Email: info@example.com</p>
+      </div>
+      <div class="footer-2">
+        <h4>Usefull link</h4>
+        <p>
+          Home <br />
+          About us<br />
+          Services<br />
+          Terms of service<br />
+          Privacy policy
+        </p>
+      </div>
+      <div class="footer-3">
+        <h4>Our Services</h4>
+        <p>
+          Home<br />
+          About us<br />
+          Services<br />
+          Terms of service<br />
+          Privacy policy
+        </p>
+      </div>
+      <div class="footer-4">
+        <h4>Our Social Networks</h4>
+        <p>
+          Cras fermentum odio eu feugiat lide
+          <br />
+          par naso tierra videa magna derita<br />
+          valies
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

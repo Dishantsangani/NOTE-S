@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>heart</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: black;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+      }
+      .heart {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        background: red;
+        transform: rotate(316deg);
+        animation-name: k;
+        animation-duration: 0.8s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+      }
+      @keyframes k {
+        0% {
+          transform: scale(0.6) rotate(316deg);
+        }
+        50% {
+          transform: scale(0.8) rotate(316deg);
+        }
+        100% {
+          transform: scale(1) rotate(316deg);
+        }
+      }
+      .heart::before {
+        content: "";
+        width: inherit;
+        height: inherit;
+        background: red;
+        position: absolute;
+        transform: translateY(-50%);
+        border-radius: 50%;
+      }
+      .heart::after {
+        content: "";
+        width: inherit;
+        height: inherit;
+        background: red;
+        position: absolute;
+        transform: translateX(-50%);
+        border-radius: 50%;
+      }
+
+      .heart1 {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        background: red;
+        transform: rotate(134deg);
+        animation-name: kk;
+        animation-duration: 0.8s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+      }
+
+      @keyframes kk {
+        0% {
+          transform: scale(0.6) rotate(134deg);
+        }
+        50% {
+          transform: scale(0.8) rotate(134deg);
+        }
+        100% {
+          transform: scale(1) rotate(134deg);
+        }
+      }
+      .heart1::before {
+        content: "";
+        width: inherit;
+        height: inherit;
+        background: red;
+        position: absolute;
+        transform: translateY(-50%);
+        border-radius: 50%;
+      }
+      .heart1::after {
+        content: "";
+        width: inherit;
+        height: inherit;
+        background: red;
+        position: absolute;
+        transform: translateX(-50%);
+        border-radius: 50%;
+      }
+      .heart2 {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        background: red;
+        transform: rotate(225deg);
+        animation-name: kkk;
+        animation-duration: 0.8s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        margin-bottom: -280px;
+        margin-left: -325px;
+      }
+
+      @keyframes kkk {
+        0% {
+          transform: scale(0.6) rotate(225deg);
+        }
+        50% {
+          transform: scale(0.8) rotate(225deg);
+        }
+        100% {
+          transform: scale(1) rotate(225deg);
+        }
+      }
+      .heart2::before {
+        content: "";
+        width: inherit;
+        height: inherit;
+        background: red;
+        position: absolute;
+        transform: translateY(-50%);
+        border-radius: 50%;
+      }
+      .heart2::after {
+        content: "";
+        width: inherit;
+        height: inherit;
+        background: red;
+        position: absolute;
+        transform: translateX(-50%);
+        border-radius: 50%;
+      }
+      .heart3 {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        background: red;
+        transform: rotate(45deg);
+        animation-name: kkkk;
+        animation-duration: 0.8s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        margin-bottom: 280px;
+        margin-left: -225px;
+      }
+
+      @keyframes kkkk {
+        0% {
+          transform: scale(0.6) rotate(45deg);
+        }
+        50% {
+          transform: scale(0.8) rotate(45deg);
+        }
+        100% {
+          transform: scale(1) rotate(45deg);
+        }
+      }
+      .heart3::before {
+        content: "";
+        width: inherit;
+        height: inherit;
+        background: red;
+        position: absolute;
+        transform: translateY(-50%);
+        border-radius: 50%;
+      }
+      .heart3::after {
+        content: "";
+        width: inherit;
+        height: inherit;
+        background: red;
+        position: absolute;
+        transform: translateX(-50%);
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heart"></div>
+    <div class="heart1"></div>
+    <div class="heart2"></div>
+    <div class="heart3"></div>
+  </body>
+</html>
