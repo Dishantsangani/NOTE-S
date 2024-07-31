@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practic</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+        color: white;
+      }
+      .navigation {
+        font-size: 20px;
+        display: flex;
+      }
+      li {
+        list-style: none;
+        padding: 34px 23px;
+      }
+      section {
+        height: 344px;
+        margin: 3px 23px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+      } 
+      h1 {
+        font-size: 4rem;
+      }
+      section::before {
+        content: "this is a content";
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navigation">
+          <li>Home</li>
+          <li>About</li>
+          <li>Contect Us</li>
+          <li>Help</li>
+        </ul>
+      </nav>
+      <section>
+        <h1>Welcome To Dishant's Web</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Necessitatibus, similique aut vero nobis blanditiis fuga inventore
+          fugiat veniam reprehenderit maxime esse voluptates rem placeat
+          repellendus cumque ut eum, modi ipsa qui nulla accusantium tempora.
+        </p>
+      </section>
+    </header>
+  </body>
+</html>
