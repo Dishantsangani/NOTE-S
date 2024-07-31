@@ -1,0 +1,12 @@
+backend
+Https Protocol
+tcp ip Protocol
+How to inernet Works
+
+::Database
+SQL
+NOSQL
+
+::Extra
+Docker
+Ai interigation
